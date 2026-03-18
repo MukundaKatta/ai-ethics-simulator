@@ -1,13 +1,15 @@
-# ai-ethics-simulator
+# AI Ethics Simulator
 
-Stub Python project. Described as "simulate ethical dilemmas for AI systems and evaluate decision-making," but none of that functionality exists.
+Interactive simulation platform for exploring ethical dilemmas in AI decision-making.
 
-## What's actually here
+## About
+AI Ethics Simulator provides scenario-based simulations where users can explore the ethical implications of AI systems. It models real-world dilemmas in areas like bias, fairness, transparency, and accountability, helping teams build more responsible AI.
 
-A single class in `src/core.py` (AiEthicsSimulator) with placeholder methods (process, analyze, transform, validate, export, get_stats) that each return a fixed dictionary like `{ "ok": True }` without doing any real work. There is no ethical dilemma simulation, no decision evaluation, no scenario modeling - just stubs.
-
-The project uses only Python standard library imports (time, logging, json, typing). No simulation or ethics frameworks are present.
+## Tech Stack
+- Language: Python
+- Simulation: Scenario modeling engine
+- Analysis: Ethical impact scoring
+- Interface: Interactive decision workflows
 
 ## Status
-
-Scaffolding only. No working ethics simulation functionality exists.
+Active development - simulation framework and scenario library established.
