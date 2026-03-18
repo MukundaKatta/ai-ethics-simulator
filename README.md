@@ -1,41 +1,13 @@
 # ai-ethics-simulator
 
-**Simulate ethical dilemmas for AI systems and evaluate decision-making**
+Stub Python project. Described as "simulate ethical dilemmas for AI systems and evaluate decision-making," but none of that functionality exists.
 
-![Build](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-proprietary-red)
+## What's actually here
 
-## Install
-```bash
-pip install -e ".[dev]"
-```
+A single class in `src/core.py` (AiEthicsSimulator) with placeholder methods (process, analyze, transform, validate, export, get_stats) that each return a fixed dictionary like `{ "ok": True }` without doing any real work. There is no ethical dilemma simulation, no decision evaluation, no scenario modeling - just stubs.
 
-## Quick Start
-```python
-from src.core import AiEthicsSimulator
- instance = AiEthicsSimulator()
-r = instance.analyze(input="test")
-```
+The project uses only Python standard library imports (time, logging, json, typing). No simulation or ethics frameworks are present.
 
-## CLI
-```bash
-python -m src status
-python -m src run --input "data"
-```
+## Status
 
-## API
-| Method | Description |
-|--------|-------------|
-| `analyze()` | Analyze |
-| `evaluate()` | Evaluate |
-| `score()` | Score |
-| `compare()` | Compare |
-| `get_insights()` | Get insights |
-| `generate_report()` | Generate report |
-| `get_stats()` | Get stats |
-| `reset()` | Reset |
-
-## Test
-```bash
-pytest tests/ -v
-```
-
+Scaffolding only. No working ethics simulation functionality exists.
