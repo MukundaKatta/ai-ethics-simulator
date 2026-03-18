@@ -1,65 +1,43 @@
-# Ai Ethics Simulator
+# ai-ethics-simulator
 
-Simulate ethical dilemmas in AI deployment
+**Simulate ethical dilemmas for AI systems and evaluate decision-making**
 
-## Features
+![Build](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-proprietary-red)
 
-- Api
-Discussion Guide
-Framework Comparator
-Scenarios - Content Moderation
-Scenarios - Criminal Justice
-Scenarios - Healthcare
-Scenarios - Hiring
-Simulator
-Stakeholder Analyzer
-
-## Tech Stack
-
-- **Language:** Python
-- **Framework:** FastAPI
-- **Key Dependencies:** pydantic,fastapi,uvicorn,anthropic,openai,numpy
-- **Containerization:** Docker + Docker Compose
-
-## Getting Started
-
-### Prerequisites
-
-- Python 3.11+
-- Docker & Docker Compose (optional)
-
-### Installation
-
+## Install
 ```bash
-git clone https://github.com/MukundaKatta/ai-ethics-simulator.git
-cd ai-ethics-simulator
-pip install -r requirements.txt
+pip install -e ".[dev]"
 ```
 
-### Running
+## Quick Start
+```python
+from src.core import AiEthicsSimulator
+ instance = AiEthicsSimulator()
+r = instance.analyze(input="test")
+```
 
+## CLI
 ```bash
-uvicorn app.main:app --reload
+python -m src status
+python -m src run --input "data"
 ```
 
-### Docker
+## API
+| Method | Description |
+|--------|-------------|
+| `analyze()` | Analyze |
+| `evaluate()` | Evaluate |
+| `score()` | Score |
+| `compare()` | Compare |
+| `get_insights()` | Get insights |
+| `generate_report()` | Generate report |
+| `get_stats()` | Get stats |
+| `reset()` | Reset |
 
+## Test
 ```bash
-docker-compose up
-```
-
-## Project Structure
-
-```
-ai-ethics-simulator/
-├── src/           # Source code
-├── tests/         # Test suite
-├── Dockerfile
-├── docker-compose.yml
-├── requirements.txt
-└── README.md
+pytest tests/ -v
 ```
 
 ## License
-
-MIT
+(c) 2026 Officethree Technologies. All Rights Reserved.
