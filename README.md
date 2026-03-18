@@ -1,32 +1,65 @@
-# ai-ethics-simulator
+# Ai Ethics Simulator
 
-**Simulate ethical dilemmas in AI deployment**
+Simulate ethical dilemmas in AI deployment
 
-## Install
+## Features
+
+- Api
+Discussion Guide
+Framework Comparator
+Scenarios - Content Moderation
+Scenarios - Criminal Justice
+Scenarios - Healthcare
+Scenarios - Hiring
+Simulator
+Stakeholder Analyzer
+
+## Tech Stack
+
+- **Language:** Python
+- **Framework:** FastAPI
+- **Key Dependencies:** pydantic,fastapi,uvicorn,anthropic,openai,numpy
+- **Containerization:** Docker + Docker Compose
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.11+
+- Docker & Docker Compose (optional)
+
+### Installation
+
 ```bash
-pip install -e '.[dev]'
+git clone https://github.com/MukundaKatta/ai-ethics-simulator.git
+cd ai-ethics-simulator
+pip install -r requirements.txt
 ```
 
-## Quick Start
-```python
-from src import __version__
+### Running
+
+```bash
+uvicorn app.main:app --reload
 ```
 
-## Modules
-- **simulator**
-- **hiring**
-- **healthcare**
-- **criminal_justice**
-- **content_moderation**
-- **stakeholder_analyzer**
-- **framework_comparator**
-- **discussion_guide**
-- **api**
+### Docker
 
-## Docker
 ```bash
-docker compose up
+docker-compose up
+```
+
+## Project Structure
+
+```
+ai-ethics-simulator/
+├── src/           # Source code
+├── tests/         # Test suite
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+└── README.md
 ```
 
 ## License
-(c) 2026 Officethree Technologies. All Rights Reserved.
+
+MIT
